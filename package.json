@@ -1,0 +1,25 @@
+{
+  "name": "cloud_iot_fan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "sam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consolidate": "^0.15.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "swig": "^1.4.2",
+    "uglify-js": "~> 2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.13.0"
+  },
+  "engines":{"node":"8.9.x"}
+}
