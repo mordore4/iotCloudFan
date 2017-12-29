@@ -1,14 +1,15 @@
 const express = require('express');
 const router = express.Router();
-//const database = require('../persistence/mysql');
+const request = require('request');
 
 router.post('/temperature', (req, res) => {
-    res.json(req.body);
-});
-
-router.post('/device_settings', (req, res) => {
-    //database.test();
-    res.json(req.body);
+    let data = req.body;
+    let session = req.session.userInfo;
+    if (session != undefined) {
+        request(`https://api.thinger.io/v2/users/singulasar/devices/esp8266/wanted_temp`)
+    } else {
+        req.redirect("/login");
+    }
 });
 
 module.exports = router;

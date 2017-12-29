@@ -15,11 +15,14 @@
     "express": "^4.16.2",
     "express-session": "^1.15.6",
     "mysql": "^2.15.0",
+    "request": "^2.83.0",
     "swig": "^1.4.2",
     "uglify-js": "~> 2.6.0"
   },
   "devDependencies": {
     "nodemon": "^1.13.0"
   },
-  "engines":{"node":"8.9.x"}
+  "engines": {
+    "node": "8.9.x"
+  }
 }

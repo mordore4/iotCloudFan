@@ -21,16 +21,11 @@ app.use(expressSession({
     saveUninitialized: true
 }));
 
-//database
-//const database = require('./server/persistence/mysql');
-
-//passport
-
 //routes
 const api = require('./server/routes/api');
+const clientRoutes = require('./server/routes/client');
 app.use('/api', api);
-app.get('/', (req, res) => {res.render("index")});
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use('/', clientRoutes);
 app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 
 

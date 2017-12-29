@@ -10,15 +10,37 @@
 </head>
 
 <body>
-  <form action="/secure/login" method="post">
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li class="active">
+                    <a href="/login">Login</a>
+                </li>
+                <li>
+                    <a href="/settings">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <form id="login" action="/login" method="post">
+    <div class="input-field">
+        <label>Gebruikersnaam</label>
+        <input type="text" placeholder="Voer hier je gebruikersnaam in" name="username" required>
+      </div>
+
   <div class="input-field">
     <label>Device code</label>
     <input type="text" placeholder="Voer hier je device code in" name="device_code" required>
   </div>
 
   <div class="input-field">
-    <label>Wachtwoord</label>
-    <input type="password" placeholder="Voer hier je wachtwoord in" name="password" required>
+      <label>Resource</label>
+      <input type="text" placeholder="Voer hier je resource in" name="resource" required>
+    </div>
+
+  <div class="input-field">
+    <label>Authorization</label>
+    <input type="text" placeholder="Voer hier je auth token in" name="auth" required>
   </div>
 
   <button type="submit" class="btn">Aanmelden</button>
@@ -30,6 +52,7 @@ crossorigin="anonymous"></script>
 crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
 crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/scripts/script.js"></script>
 </body>
 
 </html>
