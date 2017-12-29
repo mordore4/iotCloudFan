@@ -29,7 +29,7 @@ nav ul li a {
     transition: 0.1s;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, .active {
     background-color: #3e3f6d;
     color: white;
     border: 2px solid white;
