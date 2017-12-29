@@ -4,10 +4,10 @@ let DatabaseManager = {};
 
 const pool = mysql.createPool({
   connectionLimit: 10,
-  host: 'eu-cdbr-azure-west-b.cloudapp.net',
-  user: 'bb12532e57105b',
-  password: '964c1353',
-  database: 'iot_cloud',
+  host: 'iotcloudfan.database.windows.net:1433',
+  user: 'singulasar',
+  password: '1337Scriptors',
+  database: 'iotcloudfan',
   ssl: true
 });
 

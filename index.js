@@ -22,7 +22,7 @@ app.use(expressSession({
 }));
 
 //database
-const database = require('./server/persistence/mysql');
+//const database = require('./server/persistence/mysql');
 
 //passport
 
